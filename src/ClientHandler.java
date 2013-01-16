@@ -55,7 +55,7 @@ public class ClientHandler implements Runnable
 				if (count == 0)
 					extractFirstLine(line);
 				else if (line.trim().equals(""))
-				{ // done with headers, if post get more shit
+				{ // done with headers, if post get more stuff
 					if (commIsPost)
 						if (headerMap.containsKey("content-length:"))
 						{
