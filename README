@@ -1,0 +1,9 @@
+My implementation of a simple, multithreaded proxy. Just to keep things simple, the server only allows 15 connections at once. 
+
+To run: 
+  $ java -cp proxy.jar:$CLASSPATH ProxyServer
+  Note: The proxy will attempt to open a socket at port 8080 - be sure to allow incoming connections at port 8080.
+
+The proxy acts as a "middle man" between browser and server and allows for *anonymous* web browsing. Cookies, keep-alive connections, and other user-specific HTTP headers are removed before response is returned to the browser from the server. Handles redirects, GET and POST requests, and HTTP failed requests. 
+
+
